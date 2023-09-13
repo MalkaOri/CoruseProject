@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: keyvalcfgmap
+  namespace: default
+data:
+  dataFromFile: /home/ubuntu/workarea/devopshift/configmap.txt
