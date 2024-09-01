@@ -1,0 +1,13 @@
+2. kubectl rollout status deployment/webapp
+3. kubectl get rs
+4. the Solution1 attached yaml
+5. kubectl delete deploy webapp
+8. kubectl set image deployment/webapp nginx=nginx:1.17.4
+checked the rollout by typing command "kubectl rollout status deployment/webapp"
+9. kubectl set image deployment/webapp nginx=nginx:1.17.1
+10. kubectl set image deployment/webapp nginx=nginx:1.100
+10b. kubectl set image deployment/webapp nginx=nginx:1.17.1
+10e. kubectl set image deployment/webapp nginx=nginx:latest
+11. kubectl autoscale deployment webapp  --cpu-percent=85 --min=10 --max=20
+
+kubectl create job hello-job --image=busybox --dry-run -o yaml -- echo "Hello I am from job" > hello-job.yaml”
