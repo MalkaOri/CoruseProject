@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: finance-ori
+  namespace: temp-bus
+spec:
+  containers:
+  - name: static-busybox
+    image: redis:alpine
